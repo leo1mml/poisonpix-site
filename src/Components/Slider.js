@@ -6,21 +6,32 @@ class Slider extends React.Component{
         index: 0
     }
 
+    componentDidMount(){
+        this.slideContinuous();
+    }
+
+    slideContinuous = () => {
+        setInterval(() => {
+            this.slideToIndex((this.state.index + 1) % this.props.slides.length)
+        }, 5000)
+    }
+
     slideToIndex = (index) => {
         let sliderContent = document.getElementById('slider-content')
         if(sliderContent){
             requestAnimationFrame(()=> {
                 sliderContent.style.left = -(1200 * index) + 'px'
             })
-            this.setState((prevState) => {
-                return {index: (prevState.index + 1) % this.props.slides.length};
+            this.setState(() => {
+                return {index: index % this.props.slides.length};
             });
         }
     }
+    
 
     render(){
         return(
-            <div id="slider" onClick={() => {this.slideToIndex(this.state.index)}}>
+            <div id="slider">
                 <div id="slider-content">
 
                     {this.props.slides.map((item, index) => {
@@ -30,12 +41,18 @@ class Slider extends React.Component{
                             </div>
                         )
                     })}
-                {/* this.state.data.map(function(item, i){
-                    console.log('test');
-                    return <li key={i}>Test</li>
-                    }) */}
                 </div>
-
+                <div id="page-control">
+                    {this.props.slides.map((item, index) => {
+                        console.log("Index: - ", index);
+                        return (
+                            <div key={index} 
+                                onClick={() => {this.slideToIndex(index)}}
+                                className={index === this.state.index ? "page-control__indicator page-control__indicator--active" : "page-control__indicator"}>
+                            </div>
+                        )
+                    })}
+                </div>
             </div>
         )
     }

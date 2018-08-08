@@ -1,10 +1,11 @@
 #slider{
     display: flex;
     flex-direction: column;
-    flex-basis: 870px;
+    flex-basis: 100%;
     flex-shrink: 0;
     flex-grow: 0;
     overflow: hidden;
+    justify-content: flex-start;
 }
 
 .slide{
@@ -15,7 +16,7 @@
 }
 
 .image-slide{
-    height: 680px;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: 50% 50%;
@@ -26,4 +27,28 @@
     position: relative;
     display: flex;
     transition: 2s left;
+    height: 80%;
+}
+
+#page-control{
+    display: flex;
+    height: 90px;
+    justify-content: center;
+}
+
+.page-control__indicator{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 1px solid white;
+    align-self: center;
+    margin-right: 5px;
+}
+
+.page-control__indicator:hover{
+    cursor: pointer;
+}
+
+.page-control__indicator--active{
+    background-color: white;
 }
