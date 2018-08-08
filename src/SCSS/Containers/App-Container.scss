@@ -1,0 +1,17 @@
+.app-container{
+    background-color: rgb(30,30,30);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    // flex-basis: 100%;
+}
+
+.container-component-container {
+    display: flex;
+    flex: 0 0 1200px;
+    flex-direction: row;
+    margin-left: calc(50% - 600px);
+    flex-wrap: wrap;
+    position: relative;
+    top: 70px;
+}

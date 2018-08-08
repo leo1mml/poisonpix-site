@@ -1,28 +1,73 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600,700,900i");
+html {
+  font-size: 62.5%;
+  background-color: #1e1e1e;
+  display: flex; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: row; }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
+#root {
+  display: flex;
+  flex-basis: 100%;
+  padding: 0; }
 
-.App-title {
-  font-size: 1.5em;
-}
+button {
+  cursor: pointer; }
 
-.App-intro {
-  font-size: large;
-}
+button:disabled {
+  cursor: default; }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+.is-active {
+  font-weight: bold; }
+
+#slider {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 870px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  overflow: hidden; }
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex-shrink: 0; }
+
+.image-slide {
+  height: 680px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  display: block; }
+
+#slider-content {
+  position: relative;
+  display: flex;
+  transition: 2s left; }
+
+.app-container {
+  background-color: #1e1e1e;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row; }
+
+.container-component-container {
+  display: flex;
+  flex: 0 0 1200px;
+  flex-direction: row;
+  margin-left: calc(50% - 600px);
+  flex-wrap: wrap;
+  position: relative;
+  top: 70px; }
+
+.landing-page-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%; }
+
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600,700,900i');
+
+html{
+    font-size: 62.5%;
+    background-color: rgb(30,30,30);
+    display: flex;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: $m-size;
+    display: flex;
+    flex-direction: row;
+}
+
+#root {
+    display: flex;
+    flex-basis: 100%;
+    padding: 0;
+}
+
+button{
+    cursor: pointer;
+}
+button:disabled{
+    cursor: default;
+}
+
+.is-active{
+    font-weight: bold;
+}
