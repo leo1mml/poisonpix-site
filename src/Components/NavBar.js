@@ -31,12 +31,12 @@ class NavBar extends React.Component {
                 <div className="topnav" id="myTopnav">
                     <Link to="/" className="active"><span className="topnav__logo-text">POISONPIX</span></Link>
                     <div className="nav-links">
-                        <Link className="" onClick={this.toggleMenu} to="/">About</Link>
-                        <Link className="" onClick={this.toggleMenu} to="/">Portfolio</Link>
-                        <Link className="" onClick={this.toggleMenu} to="/">Contact</Link>
+                        <Link className="" onClick={this.toggleMenu} to="/">ABOUT</Link>
+                        <Link className="" onClick={this.toggleMenu} to="/">PORTFOLIO</Link>
+                        <Link className="" onClick={this.toggleMenu} to="/">CONTACT</Link>
                     </div>
                     <div className="navbar__social-links">
-                        <i class="fab fa-instagram"></i>
+                        <i className="fab fa-instagram"></i>
                         <i className="fab fa-facebook-square"></i>
                         <i className="fab fa-twitter"></i>
                     </div>

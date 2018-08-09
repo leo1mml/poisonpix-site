@@ -12,9 +12,10 @@ class Slider extends React.Component{
 
     slideToIndex = (index, shouldClearInterval = false) => {
         let sliderContent = document.getElementById('slider-content')
+        let sliderSize = document.getElementById("slider").clientWidth;
         if(sliderContent){
             requestAnimationFrame(()=> {
-                sliderContent.style.left = -(1200 * index) + 'px'
+                sliderContent.style.left = -(sliderSize * index) + 'px'
             })
 
             if(shouldClearInterval){

@@ -1,7 +1,7 @@
 .nav-container {
     position: fixed;
     display: flex;
-    width: 1200px;
+    width: 95%;
     padding-top: 0px;
     flex-direction: row;
     flex-grow: 1;
@@ -28,6 +28,7 @@
   .topnav__logo-text{
     font-family: badassFont;
     margin-top: 15px;
+    font-size: 25px;
   }
   
   /* Style the links inside the navigation bar */
@@ -38,7 +39,6 @@
       align-self: center;
       margin: $m-size;
       text-decoration: none;
-      font-size: 24px;
       font-weight: 100;
       margin-bottom: 0;
   }
@@ -51,6 +51,8 @@
   .nav-links {
     display: flex;
     align-self: center;
+    font-family: ProximaNova;
+    font-size: 15px;
   }
   
   /* Add an active class to highlight the current page */

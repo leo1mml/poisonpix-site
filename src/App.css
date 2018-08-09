@@ -1,10 +1,14 @@
 @font-face {
   font-family: badassFont;
   src: url("Fonts/Slash.ttf"); }
+@font-face {
+  font-family: ProximaNova;
+  src: url("Fonts/proxima-nova.otf"); }
 html {
   font-size: 62.5%;
   background-color: #1e1e1e;
-  display: flex; }
+  display: flex;
+  height: 100%; }
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -76,7 +80,7 @@ button:disabled {
 .nav-container {
   position: fixed;
   display: flex;
-  width: 1200px;
+  width: 95%;
   padding-top: 0px;
   flex-direction: row;
   flex-grow: 1;
@@ -97,7 +101,8 @@ button:disabled {
 
 .topnav__logo-text {
   font-family: badassFont;
-  margin-top: 15px; }
+  margin-top: 15px;
+  font-size: 25px; }
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -107,7 +112,6 @@ button:disabled {
   align-self: center;
   margin: 1.6rem;
   text-decoration: none;
-  font-size: 24px;
   font-weight: 100;
   margin-bottom: 0; }
 
@@ -117,7 +121,9 @@ button:disabled {
 
 .nav-links {
   display: flex;
-  align-self: center; }
+  align-self: center;
+  font-family: ProximaNova;
+  font-size: 15px; }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
@@ -201,17 +207,18 @@ button:disabled {
   background-color: #1e1e1e;
   overflow: hidden;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  flex-basis: 100%; }
 
 .container-component-container {
   display: flex;
-  flex: 0 0 1200px;
+  flex: 0 1 95%;
   flex-direction: row;
-  margin-left: calc(50% - 600px);
+  margin-left: calc(50% - 47.5%);
   flex-wrap: wrap;
   position: relative;
   top: 70px;
-  height: 800px; }
+  bottom: -70px; }
 
 .landing-page-container {
   display: flex;
