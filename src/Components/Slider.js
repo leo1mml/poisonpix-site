@@ -6,28 +6,29 @@ class Slider extends React.Component{
         index: 0
     }
 
-    componentDidMount(){
-        this.slideContinuous();
-    }
+    slideTimer = setInterval(() => {
+        this.slideToIndex((this.state.index + 1) % this.props.slides.length)
+    }, 4000)
 
-    slideContinuous = () => {
-        setInterval(() => {
-            this.slideToIndex((this.state.index + 1) % this.props.slides.length)
-        }, 5000)
-    }
-
-    slideToIndex = (index) => {
+    slideToIndex = (index, shouldClearInterval = false) => {
         let sliderContent = document.getElementById('slider-content')
         if(sliderContent){
             requestAnimationFrame(()=> {
                 sliderContent.style.left = -(1200 * index) + 'px'
             })
+
+            if(shouldClearInterval){
+                clearInterval(this.slideTimer)
+                this.slideTimer = setInterval(() => {
+                    this.slideToIndex((this.state.index + 1) % this.props.slides.length)
+                }, 4000)
+            }
+
             this.setState(() => {
                 return {index: index % this.props.slides.length};
             });
         }
     }
-    
 
     render(){
         return(
@@ -47,7 +48,7 @@ class Slider extends React.Component{
                         console.log("Index: - ", index);
                         return (
                             <div key={index} 
-                                onClick={() => {this.slideToIndex(index)}}
+                                onClick={() => {this.slideToIndex(index, true)}}
                                 className={index === this.state.index ? "page-control__indicator page-control__indicator--active" : "page-control__indicator"}>
                             </div>
                         )
