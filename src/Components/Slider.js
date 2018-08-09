@@ -35,10 +35,10 @@ class Slider extends React.Component{
         return(
             <div id="slider">
                 <div className="slider__controls">
-                    <div className="slider-control slider-control--prev" onClick={() => {this.slideToIndex(this.state.index - 1, true)}}>
+                    <div className="slider-control slider-control--prev" onClick={() => {this.slideToIndex((this.state.index - 1) % this.props.slides.length, true)}}>
                         <i className="fas fa-angle-left slider__control-icon"></i>
                     </div>
-                    <div className="slider-control slider-control--next" onClick={() => {this.slideToIndex(this.state.index + 1, true)}}>
+                    <div className="slider-control slider-control--next" onClick={() => {this.slideToIndex((this.state.index + 1) % this.props.slides.length, true)}}>
                         <i className="fas fa-angle-right slider__control-icon"></i>
                     </div>
                 </div>
