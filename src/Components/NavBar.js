@@ -31,7 +31,7 @@ class NavBar extends React.Component {
                 <div className="topnav" id="myTopnav">
                     <Link to="/" className="active"><span className="topnav__logo-text">POISONPIX</span></Link>
                     <div className="nav-links">
-                        <Link className="" onClick={this.toggleMenu} to="/about">About</Link>
+                        <Link className="" onClick={this.toggleMenu} to="/">About</Link>
                         <Link className="" onClick={this.toggleMenu} to="/">Portfolio</Link>
                         <Link className="" onClick={this.toggleMenu} to="/">Contact</Link>
                     </div>

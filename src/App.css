@@ -76,8 +76,7 @@ button:disabled {
 .nav-container {
   position: fixed;
   display: flex;
-  width: 1100px;
-  margin-left: calc(50% - 600px);
+  width: 1200px;
   padding-top: 0px;
   flex-direction: row;
   flex-grow: 1;
@@ -92,14 +91,12 @@ button:disabled {
 .topnav {
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
-  justify-content: space-between;
   flex-basis: 100%; }
 
 .topnav__logo-text {
   font-family: badassFont;
-  margin-top: 10px; }
+  margin-top: 15px; }
 
 /* Style the links inside the navigation bar */
 .topnav a {
