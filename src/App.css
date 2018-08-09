@@ -123,7 +123,10 @@ button:disabled {
 
   .slider-control--next {
     padding-right: 1.6rem;
-    padding-left: 1.2rem; } }
+    padding-left: 1.2rem; }
+
+  .slider-control:hover {
+    opacity: .3; } }
 .nav-container {
   position: fixed;
   display: flex;
