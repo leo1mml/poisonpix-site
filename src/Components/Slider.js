@@ -34,8 +34,15 @@ class Slider extends React.Component{
     render(){
         return(
             <div id="slider">
+                <div className="slider__controls">
+                    <div className="slider-control slider-control--prev" onClick={() => {this.slideToIndex(this.state.index - 1, true)}}>
+                        <i className="fas fa-angle-left slider__control-icon"></i>
+                    </div>
+                    <div className="slider-control slider-control--next" onClick={() => {this.slideToIndex(this.state.index + 1, true)}}>
+                        <i className="fas fa-angle-right slider__control-icon"></i>
+                    </div>
+                </div>
                 <div id="slider-content">
-
                     {this.props.slides.map((item, index) => {
                         return(
                             <div className="slide" key={index}>
