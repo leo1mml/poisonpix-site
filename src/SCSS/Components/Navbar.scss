@@ -1,0 +1,138 @@
+.nav-container {
+    position: fixed;
+    display: flex;
+    width: 1100px;
+    margin-left: calc(50% - 600px);
+    padding-top: 0px;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 1;
+    z-index: 3;
+    top: 0;
+    transition: top 0.6s;
+  }
+  
+  .nav-container--dark {
+    background-color: $darker-blue-opaque;
+  }
+  
+  .topnav {
+      // background-color: $darker-blue-opaque;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-basis: 100%;
+      // padding: $m-size;
+  }
+  
+  .topnav__logo-text{
+    font-family: badassFont;
+    margin-top: 10px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+      display: flex;
+      color: $white-blue;
+      text-align: center;
+      align-self: center;
+      margin: $m-size;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: 100;
+      margin-bottom: 0;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+      color: darkgray;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-self: center;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+      color: white;
+      flex-basis: 30%;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+      display: none;
+  }
+  
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: $desktop-breakpoint) {
+  
+    .nav-container{
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .topnav {
+      display: flex;
+      flex-wrap: wrap;
+      flex-basis: auto;
+      flex-grow: 1;
+      transition: all 0.3s ease-out;
+      height: 60px;
+    }
+    .topnav .nav-links {
+      display: flex;
+      flex-direction: column;
+      order: 3;
+      flex-basis: 100%;
+      flex-shrink: 0;
+      padding-bottom: 20px;
+    }
+    .topnav a.icon {
+      display: flex;
+      flex-direction: row;
+      margin-right: 40px;
+      cursor: pointer;
+      font-size: $l-size/1.5;
+    }
+    .topnav a.active {
+      margin-left: $l-size;
+      flex-basis: 50%;
+    }
+    .nav-container {
+      padding-top: 0rem;
+    }
+  
+    .logo{
+      height: $l-size;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: $desktop-breakpoint) {
+    .topnav.responsive {
+      position: relative;
+      height: 250px;
+      background-color: $darker-blue;
+    }
+    .topnav.responsive a.icon {
+      order: 1;
+    }
+    .topnav.responsive div {
+      display: flex;
+      flex-direction: column;
+      order: 3;
+      flex-basis: 100%;
+      flex-shrink: 0;
+      padding-bottom: 20px;
+      border-bottom: 2px solid $dark-blue;
+    }
+    .topnav a {
+      display: flex;
+      font-size: $m-size;
+      text-align: center;
+      align-self: center;
+    }
+  }
