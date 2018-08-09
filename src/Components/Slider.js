@@ -11,6 +11,10 @@ class Slider extends React.Component{
     }, 4000)
 
     slideToIndex = (index, shouldClearInterval = false) => {
+        console.log(index);
+        if(index < 0 || index > this.props.slides.length){
+            return
+        }
         let sliderContent = document.getElementById('slider-content')
         let sliderSize = document.getElementById("slider").clientWidth;
         if(sliderContent){
@@ -53,7 +57,6 @@ class Slider extends React.Component{
                 </div>
                 <div id="page-control">
                     {this.props.slides.map((item, index) => {
-                        console.log("Index: - ", index);
                         return (
                             <div key={index} 
                                 onClick={() => {this.slideToIndex(index, true)}}
