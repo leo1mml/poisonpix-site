@@ -92,6 +92,7 @@ button:disabled {
   overflow: hidden;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   flex-basis: 100%; }
 
 .topnav__logo-text {
@@ -120,12 +121,19 @@ button:disabled {
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  color: white;
-  flex-basis: 30%; }
+  color: white; }
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none; }
+
+.navbar__social-links {
+  color: white;
+  font-size: 25px;
+  margin-top: 25px; }
+
+.navbar__social-links i {
+  margin-left: 20px; }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 45rem) {

@@ -35,6 +35,11 @@ class NavBar extends React.Component {
                         <Link className="" onClick={this.toggleMenu} to="/">Portfolio</Link>
                         <Link className="" onClick={this.toggleMenu} to="/">Contact</Link>
                     </div>
+                    <div className="navbar__social-links">
+                        <i class="fab fa-instagram"></i>
+                        <i className="fab fa-facebook-square"></i>
+                        <i className="fab fa-twitter"></i>
+                    </div>
                     <a className="icon" onClick={this.toggleMenu}>
                         <i className="fa fa-bars"></i>
                     </a>
