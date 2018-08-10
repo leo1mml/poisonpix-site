@@ -12,7 +12,7 @@ class Slider extends React.Component{
 
     slideToIndex = (index, shouldClearInterval = false) => {
         console.log(index);
-        if(index < 0 || index > this.props.slides.length){
+        if(index < 0 || index > this.props.slides.length - 1){
             return
         }
         let sliderContent = document.getElementById('slider-content')

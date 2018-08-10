@@ -5,14 +5,14 @@ import LandingPage from '../Containers/LandingPage';
 
 
 export default () => (
-  <div className="app-container">
-    <BrowserRouter>
-      <div className="container-component-container">
+  <BrowserRouter>
+    <div className="app-container">
         <Navbar/>
-        <Switch>
-            <Route path="/" component={LandingPage} exact={true}/>
-        </Switch>
-      </div>
-    </BrowserRouter>
-  </div>
+        <div className="container-component-container">
+          <Switch>
+              <Route path="/" component={LandingPage} exact={true}/>
+          </Switch>
+        </div>
+    </div>
+  </BrowserRouter>
 )
