@@ -7,18 +7,20 @@
 html {
   font-size: 62.5%;
   background-color: #1e1e1e;
-  display: flex;
-  height: 100%; }
+  display: flex; }
 
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  flex-basis: 100%;
+  flex-shrink: 0; }
 
 #root {
   display: flex;
   flex-basis: 100%;
+  flex-shrink: 0;
   padding: 0; }
 
 button {
@@ -33,7 +35,7 @@ button:disabled {
 #slider {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
+  flex-basis: 95vh;
   flex-shrink: 0;
   flex-grow: 0;
   overflow: hidden;
@@ -81,7 +83,7 @@ button:disabled {
   position: absolute;
   z-index: 5;
   justify-content: space-between;
-  width: 100%;
+  width: 95%;
   height: 82.5%;
   display: flex;
   flex-direction: row;
@@ -132,8 +134,8 @@ button:disabled {
   display: flex;
   width: 100%;
   padding-top: 0px;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
   flex-direction: row;
   flex-grow: 1;
   flex-shrink: 1;
@@ -341,21 +343,23 @@ button:disabled {
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  flex-basis: 100%; }
+  flex-basis: 100%;
+  flex-shrink: 0; }
 
 .container-component-container {
   display: flex;
-  flex: 0 1 95%;
+  flex: 0 0 100%;
   flex-direction: row;
-  margin-left: calc(50% - 47.5%);
   flex-wrap: wrap;
   position: relative;
   top: 70px;
-  bottom: -70px; }
+  bottom: -70px;
+  min-height: 500px; }
 
 .landing-page-container {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%; }
+  width: 95%;
+  margin-left: calc(50% - 47.5%); }
 
 /*# sourceMappingURL=App.css.map */

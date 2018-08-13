@@ -6,12 +6,15 @@ class Slider extends React.Component{
         index: 0
     }
 
+    componentWillUnmount(){
+        clearInterval(this.slideTimer)
+    }
+
     slideTimer = setInterval(() => {
         this.slideToIndex((this.state.index + 1) % this.props.slides.length)
     }, 4000)
 
     slideToIndex = (index, shouldClearInterval = false) => {
-        console.log(index);
         if(index < 0 || index > this.props.slides.length - 1){
             return
         }

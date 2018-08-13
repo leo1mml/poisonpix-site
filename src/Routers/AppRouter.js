@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navbar from '../Components/NavBar';
 import LandingPage from '../Containers/LandingPage';
+import AboutPage from '../Containers/AboutPage';
 
 
 export default () => (
@@ -11,6 +12,7 @@ export default () => (
         <div className="container-component-container">
           <Switch>
               <Route path="/" component={LandingPage} exact={true}/>
+              <Route path="/about" component={AboutPage}/>
           </Switch>
         </div>
     </div>
