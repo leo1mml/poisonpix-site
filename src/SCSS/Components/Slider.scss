@@ -26,6 +26,7 @@
 #slider-content{
     position: relative;
     display: flex;
+    left: 0;
     transition: 2s left;
     height: 82.5%;
 }

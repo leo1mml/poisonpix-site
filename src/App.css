@@ -6,21 +6,13 @@
   src: url("Fonts/proxima-nova.otf"); }
 html {
   font-size: 62.5%;
-  background-color: #1e1e1e;
-  display: flex; }
+  background-color: #1e1e1e; }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.6rem;
-  display: flex;
-  flex-direction: row;
-  flex-basis: 100%;
-  flex-shrink: 0; }
+  font-family: ProximaNova, Helvetica;
+  font-size: 1.6rem; }
 
 #root {
-  display: flex;
-  flex-basis: 100%;
-  flex-shrink: 0;
   padding: 0; }
 
 button {
@@ -57,6 +49,7 @@ button:disabled {
 #slider-content {
   position: relative;
   display: flex;
+  left: 0;
   transition: 2s left;
   height: 82.5%; }
 
@@ -133,9 +126,6 @@ button:disabled {
   position: fixed;
   display: flex;
   width: 100%;
-  padding-top: 0px;
-  padding-left: 1%;
-  padding-right: 1%;
   flex-direction: row;
   flex-grow: 1;
   flex-shrink: 1;
@@ -340,20 +330,18 @@ button:disabled {
     transform: scale3D(0, 0, 1); } }
 .app-container {
   background-color: #1e1e1e;
-  overflow: hidden;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-basis: 100%;
-  flex-shrink: 0; }
+  flex-shrink: 1;
+  flex-grow: 1; }
 
 .container-component-container {
   display: flex;
-  flex: 0 0 100%;
+  flex: 1 1 100%;
   flex-direction: row;
-  flex-wrap: wrap;
   position: relative;
   top: 70px;
-  bottom: -70px;
   min-height: 500px; }
 
 .landing-page-container {
@@ -361,5 +349,126 @@ button:disabled {
   flex-direction: column;
   width: 95%;
   margin-left: calc(50% - 47.5%); }
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex-shrink: 0;
+  flex-grow: 1; }
+
+#about-page__pink-line {
+  height: 1px;
+  width: 160vw;
+  position: absolute;
+  background-color: #EE3B94;
+  top: 15%;
+  left: 0;
+  z-index: 5; }
+
+.about-page__slider {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 85vh;
+  position: relative;
+  overflow: hidden; }
+
+.about-page__slider__slider-content {
+  display: flex;
+  flex-basis: 100%;
+  flex-shrink: 0;
+  flex-grow: 1;
+  position: relative;
+  left: 0px;
+  transition: 1s left; }
+
+.about-page__slider__slider-content__slide {
+  display: flex;
+  flex-basis: 100%;
+  flex-shrink: 0; }
+
+.about-page__slider__slider-content__slide__content-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 95%;
+  height: 95%;
+  position: relative;
+  left: 2.5%;
+  top: 2.5%;
+  background-color: black;
+  align-content: center; }
+
+#about-page__about-texts {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 70%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: left;
+  width: 70%; }
+
+#about-page__about-title {
+  font-size: 3.2rem;
+  color: #EE3B94;
+  font-weight: 900;
+  background-color: black;
+  width: 19.2rem;
+  text-align: center;
+  position: relative;
+  top: 11%;
+  left: 25%;
+  z-index: 6; }
+
+.about-page__about-description__middle-layout {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 20%;
+  flex-basis: 50%;
+  justify-content: space-between; }
+
+#about-page__about-description {
+  display: flex;
+  flex-basis: 40%;
+  flex-shrink: 1;
+  flex-grow: 0;
+  color: white;
+  text-align: left;
+  box-sizing: border-box;
+  justify-content: left;
+  position: relative;
+  left: 15%; }
+
+.about__arrow-right {
+  font-size: 3.2rem;
+  color: #999999;
+  align-content: center;
+  justify-content: left;
+  display: flex;
+  flex-basis: 10%;
+  padding-right: 10px;
+  cursor: pointer;
+  align-content: left; }
+
+.about__arrow-right:before {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: auto 0;
+  /* This will center the border. */
+  height: 50%;
+  /* Change this to whatever width you want. */
+  padding-left: 3rem;
+  /* This creates some space between the element and the border. */
+  border-left: 2px solid #999999;
+  /* This creates the border. Replace black with whatever color you want. */ }
+
+.about__arrow-right i {
+  position: relative;
+  top: calc(50% - 1.5rem); }
+
+.about__arrow-right:hover {
+  color: white; }
 
 /*# sourceMappingURL=App.css.map */

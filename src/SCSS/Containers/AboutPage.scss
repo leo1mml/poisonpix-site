@@ -1,6 +1,129 @@
 .about-page{
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+#about-page__pink-line{
+    height: 1px;
+    width: 160vw;
+    position: absolute;
+    background-color: $custom-pink;
+    top: 15%;
+    left: 0;
+    z-index: 5;
+}
+
+.about-page__slider{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 85vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-page__slider__slider-content{
     display: flex;
     flex-basis: 100%;
     flex-shrink: 0;
+    flex-grow: 1;
+    position: relative;
+    left: 0px;
+    transition: 1s left;
+}
+
+.about-page__slider__slider-content__slide{
+    display: flex;
+    flex-basis: 100%;
+    flex-shrink: 0;
+}
+
+.about-page__slider__slider-content__slide__content-container{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 95%;
+    height: 95%;
+    position: relative;
+    left: 2.5%;
+    top: 2.5%;
+    background-color: black;
+    align-content: center;
+}
+
+#about-page__about-texts{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: left;
+    width: 70%;
+}
+
+#about-page__about-title{
+    font-size: $l-size;
+    color: $custom-pink;
+    font-weight: 900;
+    background-color: black;
+    width: ($xxl-size * 2);
+    text-align: center;
+    position: relative;
+    top: 11%;
+    left: 25%;
+    z-index: 6;
+}
+
+.about-page__about-description__middle-layout{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 20%;
+    flex-basis: 50%;
+    justify-content: space-between;
+}
+
+#about-page__about-description{
+    display: flex;
+    flex-basis: 40%;
+    flex-shrink: 1;
+    flex-grow: 0;
+    color: white;
+    text-align: left;
+    box-sizing: border-box;
+    justify-content: left;
+    position: relative;
+    left: 15%;
+}
+
+.about__arrow-right{
+    font-size: $l-size;
+    color: darken(white, 40%);
+    // border-left: 2px solid darken(white, 40%);
+    align-content: center;
+    justify-content: left;
+    display: flex;
+    flex-basis: 10%;
+    padding-right: 10px;
+    cursor: pointer;
+    align-content: left;
+}
+
+.about__arrow-right:before {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: auto 0; /* This will center the border. */
+    height: 50%; /* Change this to whatever width you want. */
+    padding-left: 3rem; /* This creates some space between the element and the border. */
+    border-left: 2px solid darken(white, 40%); /* This creates the border. Replace black with whatever color you want. */
+}
+
+.about__arrow-right i{
+    position: relative;
+    top: calc(50% - 1.5rem);
+}
+
+.about__arrow-right:hover{
+    color: white;
 }
