@@ -37,12 +37,19 @@ class AboutPage extends React.Component{
                                         <i className="fas fa-arrow-right"></i>
                                     </div>
                                 </div>
-                                
                             </div>
                         </div>
                         <div className="about-page__slider__slider-content__slide">
                             <div className="about-page__slider__slider-content__slide__content-container">
-                                
+                            <span id="about-page__about-title">TEAM</span>
+                                <div className="about-page__about-description__middle-layout">
+                                    <div className="about__arrow-left" onClick={() => {this.slideToIndex(0)}}>
+                                        <i className="fas fa-arrow-left"></i>
+                                    </div>
+                                    <div className="aboout__team-members">
+                                        
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

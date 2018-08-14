@@ -412,9 +412,9 @@ button:disabled {
   color: #EE3B94;
   font-weight: 900;
   background-color: black;
-  width: 19.2rem;
+  padding: 0 10px;
   text-align: center;
-  position: relative;
+  position: absolute;
   top: 11%;
   left: 25%;
   z-index: 6; }
@@ -432,12 +432,14 @@ button:disabled {
   flex-basis: 40%;
   flex-shrink: 1;
   flex-grow: 0;
+  max-width: 600px;
   color: white;
   text-align: left;
   box-sizing: border-box;
   justify-content: left;
   position: relative;
-  left: 15%; }
+  left: 15%;
+  top: 10%; }
 
 .about__arrow-right {
   font-size: 3.2rem;
@@ -448,7 +450,7 @@ button:disabled {
   flex-basis: 10%;
   padding-right: 10px;
   cursor: pointer;
-  align-content: left; }
+  align-content: right; }
 
 .about__arrow-right:before {
   content: "";
@@ -470,5 +472,38 @@ button:disabled {
 
 .about__arrow-right:hover {
   color: white; }
+
+.about__arrow-left {
+  font-size: 3.2rem;
+  color: #999999;
+  align-content: center;
+  justify-content: right;
+  display: flex;
+  flex-basis: 10%;
+  padding-left: 10px;
+  cursor: pointer;
+  align-content: right; }
+
+.about__arrow-left:after {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: auto 0;
+  /* This will center the border. */
+  height: 50%;
+  /* Change this to whatever width you want. */
+  padding-right: 3rem;
+  /* This creates some space between the element and the border. */
+  border-right: 2px solid #999999;
+  /* This creates the border. Replace black with whatever color you want. */ }
+
+.about__arrow-left i {
+  position: relative;
+  top: calc(50% - 1.5rem); }
+
+@media screen and (max-width: 600px) {
+  #about-page__about-title {
+    left: 10%; } }
 
 /*# sourceMappingURL=App.css.map */
