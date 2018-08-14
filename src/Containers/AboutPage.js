@@ -2,6 +2,10 @@ import React from 'react'
 
 class AboutPage extends React.Component{
 
+    state = {
+        teamMembers: ['Augusto Henrique','Eduardo Torres','Eric Winston','Gabriel Messias','Leonel Lima','Pedro Henrique']
+    }
+
 
     slideToIndex = (index) => {
         if(index < 0){
@@ -9,7 +13,6 @@ class AboutPage extends React.Component{
         }
         let sliderContent = document.getElementsByClassName('about-page__slider__slider-content')[0]
         let sliderSize = document.getElementsByClassName('about-page__slider')[0].clientWidth
-        console.log(sliderContent);
         if(sliderContent){
             requestAnimationFrame(()=> {
                 sliderContent.style.left = -(sliderSize * index) + 'px'
@@ -46,7 +49,17 @@ class AboutPage extends React.Component{
                                     <div className="about__arrow-left" onClick={() => {this.slideToIndex(0)}}>
                                         <i className="fas fa-arrow-left"></i>
                                     </div>
-                                    <div className="aboout__team-members">
+                                    <div className="about__team-members">
+                                        {
+                                            this.state.teamMembers.map((item, index) => {
+                                                return(
+                                                        <div key={index} className="team-member">
+                                                            <div className="team-member__outer-border-photo"><div className="team-member__photo"></div></div>
+                                                            <span className="team-member__name">{item}</span>
+                                                        </div>
+                                                    )
+                                            })
+                                        }
                                         
                                     </div>
                                 </div>

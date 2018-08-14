@@ -12,7 +12,7 @@ export default () => (
         <div className="container-component-container">
           <Switch>
               <Route path="/" component={LandingPage} exact={true}/>
-              <Route path="/about" component={AboutPage}/>
+              <Route path="/about" component={AboutPage} exact={true}/>
           </Switch>
         </div>
     </div>

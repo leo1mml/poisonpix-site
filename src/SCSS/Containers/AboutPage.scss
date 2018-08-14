@@ -82,6 +82,7 @@
     top: 20%;
     flex-basis: 50%;
     justify-content: space-between;
+    align-items: center;
 }
 
 #about-page__about-description{
@@ -112,6 +113,7 @@
 }
 
 .about__arrow-right:before {
+    position: relative;
     content: ""; /* This is necessary for the pseudo element to work. */ 
     display: block; /* This will put the pseudo element on its own line. */
     margin: auto 0; /* This will center the border. */
@@ -139,7 +141,7 @@
     justify-content: right;
     display: flex;
     flex-basis: 10%;
-    padding-left: 10px;
+    padding-left: 60px;
     cursor: pointer;
     align-content: right;
 }
@@ -158,10 +160,66 @@
     top: calc(50% - 1.5rem);
 }
 
+.about__team-members{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+.team-member{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    color: white;
+}
+
+.team-member__outer-border-photo{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+
+.team-member__photo{
+    width: 90%;
+    height: 90%;
+    position: relative;
+    top: calc(50% - 45%);
+    left: calc(50% - 45%);
+    border-radius: 50%;
+    background-color: cyan;
+    background-image: url('Images/slides/slide-00.png');
+    background-size: cover;
+}
+
+.team-member__name{
+    text-align: center;
+}
+
 
 @media screen and (max-width: 600px){
     #about-page__about-title{
         left: 10%;
+    }
+
+    .about__team-members{
+        position: relative;
+        top: 30%;
+        overflow: hidden;
+    }
+
+    .team-member{
+        width: 80px;
+        font-size: $s-size;
+        margin-bottom: 5px;
+    }
+    .team-member__outer-border-photo{
+        width: 60px;
+        height: 60px;
     }
 }
 
