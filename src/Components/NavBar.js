@@ -29,7 +29,7 @@ class NavBar extends React.Component {
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
                 <div className="topnav" id="myTopnav">
-                    <Link to="/" className="active"><span className="topnav__logo-text">POISONPIX</span></Link>
+                    <Link to="/" onClick={this.toggleMenu} className="active"><span className="topnav__logo-text">POISONPIX</span></Link>
                     <div className="nav-links">
                         <Link className="" onClick={this.toggleMenu} to="/about">ABOUT</Link>
                         <Link className="" onClick={this.toggleMenu} to="/">PORTFOLIO</Link>
