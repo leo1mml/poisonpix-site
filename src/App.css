@@ -482,9 +482,12 @@ button:disabled {
   justify-content: right;
   display: flex;
   flex-basis: 10%;
-  padding-left: 60px;
+  padding-left: 20px;
   cursor: pointer;
   align-content: right; }
+
+.about__arrow-left:hover {
+  color: white; }
 
 .about__arrow-left:after {
   content: "";
@@ -545,7 +548,7 @@ button:disabled {
 
   .about__team-members {
     position: relative;
-    top: 30%;
+    top: 10%;
     overflow: hidden; }
 
   .team-member {
