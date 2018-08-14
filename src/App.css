@@ -263,7 +263,7 @@ button:disabled {
   width: 5vw;
   height: 5vw;
   position: relative;
-  top: calc(50% - 2.5vw);
+  top: 47.5vh;
   margin-left: 47.5vw; }
 
 .sk-cube-grid--go-away {
