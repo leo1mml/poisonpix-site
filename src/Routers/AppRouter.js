@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navbar from '../Components/NavBar';
 import LandingPage from '../Containers/LandingPage';
 import AboutPage from '../Containers/AboutPage';
+import PortfolioPage from '../Containers/PortfolioPage';
 
 
 export default () => (
@@ -13,6 +14,7 @@ export default () => (
           <Switch>
               <Route path="/" component={LandingPage} exact={true}/>
               <Route path="/about" component={AboutPage} exact={true}/>
+              <Route path="/portfolio" component={PortfolioPage} exact={true}/>
           </Switch>
         </div>
     </div>

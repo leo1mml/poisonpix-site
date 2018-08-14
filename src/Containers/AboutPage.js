@@ -54,7 +54,7 @@ class AboutPage extends React.Component{
                                             this.state.teamMembers.map((item, index) => {
                                                 return(
                                                         <div key={index} className="team-member">
-                                                            <div className="team-member__outer-border-photo"><div className="team-member__photo"></div></div>
+                                                            <div className="team-member__outer-border-photo"><div style={{backgroundImage: `url('Images/members-images/member_0${index+1}.png')`}} className="team-member__photo"></div></div>
                                                             <span className="team-member__name">{item}</span>
                                                         </div>
                                                     )

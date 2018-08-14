@@ -1,0 +1,42 @@
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 90%;
+}
+
+.portfolio__content-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 90%;
+    background-color: black;
+    width: 90%;
+    position: relative;
+    left: 5%;
+}
+
+.portfolio__pink-line{
+    width: 100%;
+    position: absolute;
+    height: 1px;
+    top: 85px;
+    background-color: $custom-pink;
+    z-index: 6;
+}
+
+.portfolio__title{
+    color: $custom-pink;
+    font-weight: 900;
+    font-size: $l-size;
+    background-color: black;
+    position: absolute;
+    top: 70px;
+    left: 10%;
+    padding: 0 10px;
+    z-index: 7;
+}
+
+@media screen and (max-width: 600px){
+    // .portfolio__title{
+
+    // }
+}

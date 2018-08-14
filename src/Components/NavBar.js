@@ -32,7 +32,7 @@ class NavBar extends React.Component {
                     <Link to="/" className="active"><span className="topnav__logo-text">POISONPIX</span></Link>
                     <div className="nav-links">
                         <Link className="" onClick={this.toggleMenu} to="/about">ABOUT</Link>
-                        <Link className="" onClick={this.toggleMenu} to="/">PORTFOLIO</Link>
+                        <Link className="" onClick={this.toggleMenu} to="/portfolio">PORTFOLIO</Link>
                         <Link className="" onClick={this.toggleMenu} to="/">CONTACT</Link>
                     </div>
                     <div className="navbar__social-links">
