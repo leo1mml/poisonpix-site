@@ -1,7 +1,9 @@
 .portfolio{
     display: flex;
     flex-direction: column;
-    flex: 1 0 90%;
+    flex: 0 0 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .portfolio__content-container{
@@ -10,8 +12,10 @@
     flex: 1 0 90%;
     background-color: black;
     width: 90%;
-    position: relative;
-    left: 5%;
+    align-self: center;
+    box-sizing: border-box;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
 }
 
 .portfolio__pink-line{
@@ -35,8 +39,97 @@
     z-index: 7;
 }
 
-@media screen and (max-width: 600px){
-    // .portfolio__title{
+.portfolio__slider{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70vh;
+    flex-grow: 1;
+    margin-top: 120px;
+    // overflow: scroll;
+}
 
-    // }
+.portfolio__slider__content{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+
+.portfolio__slider__content__slide{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.portfolio__slider__content__slide__game-content{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 40%;
+    flex-grow: 1;
+    margin-top: 5%;
+}
+
+.portfolio__slider__content__slide__game-content--right{
+    margin-right: 20%;
+    justify-content: flex-end;
+}
+
+.portfolio__slider__content__slide__game-content--left{
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-left: 20%;
+}
+
+.portfolio__game-presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-basis: 40%;
+    color: white;
+    margin-right: 2%;
+    margin-left: 2%;
+    box-sizing: border-box;
+}
+
+.portfolio__game__image{
+    display: flex;
+    flex-basis: 30%;
+    flex-shrink: 0;
+    height: 80%;
+    align-self: center;
+    background-size: cover;
+}
+
+.portfolio__slide__game-title{
+    text-align: center;
+    font-size: $l-size;
+    font-weight: 900;
+}
+
+.portfolio__slide__game-description{
+    text-align: center;
+}
+
+.portfolio__slide__learn-more-btn{
+    border: 1px solid white;
+    width: 100px;
+    align-self: center;
+    color: white;
+    font-size: $s-size;
+    background-color: black;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px){
+    .portfolio__title{
+        top: 50px;
+    }
+    .portfolio__pink-line{
+        top: 65px;
+    }
 }
