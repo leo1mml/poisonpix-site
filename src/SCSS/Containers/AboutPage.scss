@@ -140,7 +140,7 @@
     // align-self: center;
     justify-content: right;
     display: flex;
-    flex-basis: 10%;
+    flex-basis: 5%;
     padding-left: 20px;
     cursor: pointer;
     align-content: right;
@@ -166,7 +166,7 @@
 .about__team-members{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     flex-grow: 1;
     max-width: 1100px;
