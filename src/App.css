@@ -615,7 +615,7 @@ button:disabled {
   display: flex;
   flex-direction: column;
   flex-basis: 90vw;
-  max-width: 90%;
+  max-width: 100%;
   flex-grow: 0; }
 
 .portfolio__slider__content__slide__game-content {
@@ -680,7 +680,8 @@ button:disabled {
   .portfolio__slider__content__slide__game-content {
     flex-direction: column-reverse;
     margin: 0;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    align-self: center; }
 
   .portfolio__game-presentation {
     flex-basis: 400px;
