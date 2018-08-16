@@ -1,4 +1,5 @@
 import React from 'react'
+import {FormattedMessage} from 'react-intl';
 
 class AboutPage extends React.Component{
 
@@ -32,8 +33,11 @@ class AboutPage extends React.Component{
                                 <span id="about-page__about-title">ABOUT US</span>
                                 <div className="about-page__about-description__middle-layout">
                                     <span id="about-page__about-description">
-                                    An indie gaming company created in Brazil in 2018 by six students from the Catholic university of Brasilia with a focus on bringing the feeling of nostalgia in their games, because, who said tradition can not be a trend?
-Always bringing immersive games with the intention of entertaining your audience, with a visual style on pixel art and gameplay focused on the difficulty, after all, what is a game without challenge?
+                                        <FormattedMessage
+                                            id="About.text"
+                                            defaultMessage="An indie gaming company created in Brazil in 2018 by six students from the Catholic university of Brasilia with a focus on bringing the feeling of nostalgia in their games, because, who said tradition can not be a trend?
+Always bringing immersive games with the intention of entertaining your audience, with a visual style on pixel art and gameplay focused on the difficulty, after all, what is a game without challenge?"
+                                        />
                                     </span>
                                     <div className="about__arrow-right" onClick={() => {this.slideToIndex(1)}}>
                                         <i className="fas fa-arrow-right"></i>
