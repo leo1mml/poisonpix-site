@@ -1,21 +1,10 @@
 .portfolio{
     display: flex;
-    flex-direction: column;
     flex: 0 0 100%;
     width: 100%;
     box-sizing: border-box;
-}
-
-.portfolio__content-container{
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 90%;
-    background-color: black;
-    width: 90%;
-    align-self: center;
-    box-sizing: border-box;
-    padding-bottom: 5%;
-    margin-bottom: 5%;
+    justify-content: center;
+    color: white;
 }
 
 .portfolio__pink-line{
@@ -25,6 +14,17 @@
     top: 85px;
     background-color: $custom-pink;
     z-index: 6;
+}
+
+.portfolio__content-container{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 90%;
+    background-color: black;
+    box-sizing: border-box;
+    padding-bottom: 5%;
+    padding-top: 120px;
+    margin-bottom: 5%;
 }
 
 .portfolio__title{
@@ -40,37 +40,37 @@
 }
 
 .portfolio__slider{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 70vh;
-    flex-grow: 1;
-    margin-top: 120px;
-    // overflow: scroll;
+    width: 100%;
 }
 
 .portfolio__slider__content{
     display: flex;
     flex-direction: row;
-    flex-basis: 100%;
     flex-grow: 1;
+    flex-shrink: 0;
 }
 
 .portfolio__slider__content__slide{
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
-    flex-shrink: 0;
-    flex-grow: 0;
-    width: 100%;
-    justify-content: space-between;
+    flex-basis: 100vw;
+    flex-grow: 1;
+//     flex-shrink: 0;
+//     flex-grow: 0;
+//     width: 100%;
+//     justify-content: space-between;
 }
 
 .portfolio__slider__content__slide__game-content{
     display: flex;
     flex-direction: row;
-    flex-basis: 40%;
-    flex-grow: 1;
-    margin-top: 5%;
+    flex-basis: 400px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 0;
+    // background-color: white;
+//     flex-grow: 1;
+//     margin-top: 5%;
 }
 
 .portfolio__slider__content__slide__game-content--right{
@@ -89,17 +89,16 @@
     flex-direction: column;
     justify-content: space-evenly;
     flex-basis: 40%;
-    color: white;
-    margin-right: 2%;
-    margin-left: 2%;
+    // color: white;
+    margin-right: 5%;
+    margin-left: 5%;
     box-sizing: border-box;
 }
 
 .portfolio__game__image{
     display: flex;
-    flex-basis: 30%;
-    flex-shrink: 0;
-    height: 80%;
+    flex-basis: 10%;
+    height: 40%;
     align-self: center;
     background-size: cover;
 }
@@ -131,5 +130,22 @@
     }
     .portfolio__pink-line{
         top: 65px;
+    }
+
+    .portfolio__slider__content__slide__game-content{
+        flex-direction: column-reverse;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .portfolio__game-presentation{
+        flex-basis: 400px;
+        flex-shrink: 1;
+    }
+
+    .portfolio__game__image{
+        height: auto;
+        width: 90%;
+        align-self: center;
     }
 }
