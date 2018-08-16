@@ -668,7 +668,9 @@ button:disabled {
   font-size: 1.2rem;
   background-color: black;
   padding: 5px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none; }
 
 @media screen and (max-width: 600px) {
   .portfolio__title {
