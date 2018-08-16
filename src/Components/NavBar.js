@@ -33,7 +33,7 @@ class NavBar extends React.Component {
                     <div className="nav-links">
                         <Link className="" onClick={this.toggleMenu} to="/about">ABOUT</Link>
                         <Link className="" onClick={this.toggleMenu} to="/portfolio">PORTFOLIO</Link>
-                        <Link className="" onClick={this.toggleMenu} to="/">CONTACT</Link>
+                        <a className="" onClick={this.toggleMenu} href="mailto:poisonpixstudios@gmail.com?Subject=Hello%20again" target="_top">CONTACT</a>
                     </div>
                     <div className="navbar__social-links">
                         <a href="https://www.instagram.com/poisonpixstudios/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
