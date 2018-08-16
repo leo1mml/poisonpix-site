@@ -19,7 +19,9 @@
 .portfolio__content-container{
     display: flex;
     flex-direction: column;
-    flex-basis: 90%;
+    flex-basis: 90vw;
+    flex-grow: 0;
+    width: 90%;
     background-color: black;
     box-sizing: border-box;
     padding-bottom: 5%;
@@ -46,31 +48,25 @@
 .portfolio__slider__content{
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
-    flex-shrink: 0;
+    min-width: 100%;
 }
 
 .portfolio__slider__content__slide{
     display: flex;
     flex-direction: column;
-    flex-basis: 100vw;
-    flex-grow: 1;
-//     flex-shrink: 0;
-//     flex-grow: 0;
-//     width: 100%;
-//     justify-content: space-between;
+    flex-basis: 90vw;
+    max-width: 90%;
+    flex-grow: 0;
 }
 
 .portfolio__slider__content__slide__game-content{
     display: flex;
     flex-direction: row;
     flex-basis: 400px;
+    width: 80%;
     flex-grow: 0;
     flex-shrink: 0;
     margin: 0;
-    // background-color: white;
-//     flex-grow: 1;
-//     margin-top: 5%;
 }
 
 .portfolio__slider__content__slide__game-content--right{
