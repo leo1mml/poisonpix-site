@@ -87,7 +87,7 @@
 
 #about-page__about-description{
     display: flex;
-    flex-basis: 40%;
+    flex-basis: 60%;
     flex-shrink: 1;
     flex-grow: 0;
     max-width: 600px;
@@ -98,6 +98,7 @@
     position: relative;
     left: 15%;
     top: 10%;
+    text-align: left; 
 }
 
 .about__arrow-right{
