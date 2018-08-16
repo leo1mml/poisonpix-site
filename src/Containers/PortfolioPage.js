@@ -31,7 +31,7 @@ class PortfolioPage extends React.Component{
                                 <div className="portfolio__slider__content__slide__game-content portfolio__slider__content__slide__game-content--left">
                                     <div className="portfolio__game-presentation">
                                         <span className="portfolio__slide__game-title">AMARUQ</span>
-                                        <p className="portfolio__slide__game-description">It's only you and your father, living in the cold of the mountains, everyday he leaves you alone to hunt and comes back with food,but one day he doesn't, what happen to him? you have to find it out, but how will you survive alone?</p>
+                                        <p className="portfolio__slide__game-description">It's only you and your father, living in the cold of the mountains, everyday he leaves you alone to hunt and comes back with food,but one day he doesn't, what happenned to him? You have to find it out, but how will you survive alone?</p>
                                         <a  href='https://poisonpix.itch.io/amaruq' target="_blank" rel="noopener noreferrer" className="portfolio__slide__learn-more-btn">Learn More...</a>
                                     </div>
                                     <img src={require('../Images/portfolio-images/slide-02.png')} className="portfolio__game__image" alt=""></img>
