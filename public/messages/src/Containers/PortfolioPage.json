@@ -1,5 +1,9 @@
 [
   {
+    "id": "Portfolio.title",
+    "defaultMessage": "PORTFOLIO"
+  },
+  {
     "id": "Portfolio.IterInferis.text",
     "defaultMessage": "In a desolated place, whithout a clue about where you are or even who yourself really are. This is a dark place and your're confused. Try to unveil your own mysteries and the ones of this world."
   },

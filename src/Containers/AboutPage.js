@@ -30,7 +30,12 @@ class AboutPage extends React.Component{
                         <div id="about-page__pink-line"></div>
                         <div className="about-page__slider__slider-content__slide">
                             <div className="about-page__slider__slider-content__slide__content-container">
-                                <span id="about-page__about-title">ABOUT US</span>
+                                <span id="about-page__about-title">
+                                    <FormattedMessage
+                                        id="About.title"
+                                        defaultMessage="ABOUT US"
+                                    />
+                                </span>
                                 <div className="about-page__about-description__middle-layout">
                                     <span id="about-page__about-description">
                                         <FormattedMessage
@@ -47,7 +52,12 @@ Always bringing immersive games with the intention of entertaining your audience
                         </div>
                         <div className="about-page__slider__slider-content__slide">
                             <div className="about-page__slider__slider-content__slide__content-container">
-                            <span id="about-page__about-title">TEAM</span>
+                            <span id="about-page__about-title">
+                                <FormattedMessage
+                                    id="About.Team.title"
+                                    defaultMessage="TEAM"
+                                />
+                            </span>
                                 <div className="about-page__about-description__middle-layout">
                                     <div className="about__arrow-left" onClick={() => {this.slideToIndex(0)}}>
                                         <i className="fas fa-arrow-left"></i>

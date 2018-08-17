@@ -17,7 +17,12 @@ class PortfolioPage extends React.Component{
             <div className="portfolio">
                 <div className="portfolio__pink-line"></div>
                 <div className="portfolio__content-container">
-                    <span className="portfolio__title">PORTFOLIO</span>
+                    <span className="portfolio__title">
+                        <FormattedMessage
+                            id="Portfolio.title"
+                            defaultMessage="PORTFOLIO"
+                        />
+                    </span>
                     <div className="portfolio__slider">
                         <div className="portfolio__slider__content">
                             <div className="portfolio__slider__content__slide">
