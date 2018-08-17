@@ -1,0 +1,14 @@
+[
+  {
+    "id": "Nav.about",
+    "defaultMessage": "ABOUT"
+  },
+  {
+    "id": "Nav.PORTFOLIO",
+    "defaultMessage": "PORTFOLIO"
+  },
+  {
+    "id": "Nav.contact",
+    "defaultMessage": "CONTACT"
+  }
+]
