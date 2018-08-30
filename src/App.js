@@ -11,9 +11,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener("load", () =>{
+    window.onload = () =>{
       this.setState({shouldRenderApp: true})
-    })
+    }
   }
 
   render() {
