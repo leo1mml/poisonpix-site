@@ -5,6 +5,7 @@ import Navbar from '../Components/NavBar';
 import LandingPage from '../Containers/LandingPage';
 import AboutPage from '../Containers/AboutPage';
 import PortfolioPage from '../Containers/PortfolioPage';
+import Privacy from '../Containers/Privacy'
 
 import en from "react-intl/locale-data/en";
 import pt from "react-intl/locale-data/pt";
@@ -40,6 +41,7 @@ export default () => (
                         <Route path="/" component={LandingPage} exact={true}/>
                         <Route path="/about" component={AboutPage} exact={true}/>
                         <Route path="/portfolio" component={PortfolioPage} exact={true}/>
+                        <Route path="/privacypolicy" component={Privacy} exact={true}/>
                     </Switch>
                 </div>
             </div>

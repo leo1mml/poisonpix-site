@@ -694,5 +694,7 @@ button:disabled {
     height: auto;
     width: 90%;
     align-self: center; } }
+.privacy {
+  color: white; }
 
 /*# sourceMappingURL=App.css.map */
